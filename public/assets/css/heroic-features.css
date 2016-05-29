@@ -1,0 +1,312 @@
+/*!
+ * Start Bootstrap - Heroic Features HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@font-face {
+  font-family: 'Kanit';
+  src: url("../fonts/Kanit/Kanit-Light.ttf") format("truetype");
+  font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Kanit';
+}
+body {
+    /*padding-top: 20px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    /*  padding-top: 70px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0 0 0;
+    padding: 25px 0;
+    background-color: #167EA5;
+    width: 100%;
+    color: #FFF;
+}
+
+.footer-links {
+    border-bottom: #FFF solid 2px;
+}
+
+.footer-links a {
+    color: #FFF;
+}
+
+.footer-links ul {
+    text-align: right;
+    display: block;
+    float: right;
+}
+
+.footer-links ul li {
+    float: left;
+    list-style-type: none;
+    margin-left: 50px;
+    text-align: right;
+}
+
+nav.navbar.navbar-inverse.navbar-fixed-top {
+    margin-top: 20px;
+}
+
+.topest-bar {
+    height: 30px;
+    background-color: #167EA5;
+    margin-bottom: 20px;
+}
+
+a#logo-header {
+    width: 300px;
+    text-align: center;
+    display: block;
+    padding: 9px;
+    border: #167ea5 solid 3px;
+    height: 65px;
+    color: #167ea5;
+}
+span.logo-subtext {
+    display: block;
+}
+
+#logo img {
+    width: 250px;
+}
+
+.navbar-inverse {
+    background-color: #FFF !important;
+    border-color: #FFFFFF !important;
+}
+
+ul.nav.navbar-nav a {
+    color: #167EA5;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+ul.nav.navbar-nav a:hover {
+    color: #167EA5;
+}
+
+span.link-newline {
+    display: block;
+}
+
+a.btn.btn-join {
+    background-color: #167EA5 !important;
+    display: block;
+    color: #FFF !important;
+}
+
+a.btn.btn-join:hover {
+    background-color: #167EA5;
+    display: block;
+    color: #FFF !important;
+}
+
+.hero-spacer {
+    margin-top: 18px !important;
+}
+
+header {
+    background-color: #FFF !important;
+    border: solid 2px #D6D6D6;
+    height: 300px;
+}
+
+.feature-works {
+    background-color: #167EA5;
+    padding: 10px;
+    color: #FFF;
+    width: 353px;
+    /*text-align: center;*/
+    margin-left: -40px;
+    padding-left: 45px;
+}
+
+.feature-spacebar-member {
+    background-color: #167EA5;
+    padding: 10px;
+    color: #FFF;
+    width: 480px;
+    /*text-align: center;*/
+    margin-left: -40px;
+    padding-left: 45px;
+}
+
+h3.feature-personal-web {
+    background-color: #167EA5;
+    padding: 10px;
+    color: #FFF;
+    width: 454px;
+    margin-left: -40px;
+    padding-left: 45px;
+}
+
+h3.personal-web-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.thumbnail.thumbnail-mock {
+    background-image: url('../img/mac-mock.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.thumbnail-mock img {
+    width: 88%;
+    padding-top: 8px;
+}
+
+.caption.after-mock-img {
+    margin-top: 70px;
+}
+/* Card */
+
+.thumbnail:hover {
+    border: solid 1px #167EA5;
+}
+
+.user-info {
+    margin-top: 30px;
+}
+
+.caption {
+    letter-spacing: 2px;
+}
+
+span.jobs {
+    display: block;
+    font-weight: normal;
+}
+
+.user-card {
+    text-align: left;
+    font-weight: bold;
+}
+
+img.user-img-circle {
+    width: 70px;
+    border-radius: 50%;
+    height: 70px;
+    margin-top: -13px;
+}
+
+.member-img {
+    width: 60%;
+    margin-top: 30px;
+}
+
+h3.artist-name-card {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.artist-info-card {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #8C8C8C;
+}
+
+.cam-button {
+    font-size: 41px !important;
+    color: #167EA5;
+}
+
+.text-more {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #167EA5;
+}
+
+a.see-more-box {
+    display: inline-block;
+    border: 3px solid #167EA5;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+a.see-more-work {
+    display: inline-block;
+    border: 3px solid #167EA5;
+    width: 180px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+/*@itoon*/
+.navbar-inverse .navbar-toggle .icon-bar{
+    background-color: #333;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background: none;
+}
+.navbar-inverse .navbar-toggle{
+
+}
+
+
+
+@media (min-width: 768px) {
+    ul.navbar-nav {
+        float: right;
+    }
+
+    span.link-newline {
+        display: block;
+        text-align: center;
+    }
+    /*@itoon*/
+    a.btn.btn-join{
+        position: relative;
+        top: 8px;
+    }
+
+}
+@media (max-width: 768px) {
+    #logo img {
+        width: 150px;
+    }
+    /*@itoon*/
+    h3.feature-personal-web,.feature-works,a.see-more-box{
+        width: auto;
+    }
+    .topest-bar{
+        margin-bottom: 0;
+    }
+    .navbar-brand{
+        width: 100%;
+        height: auto;
+    }
+    #logo img{
+        width: 100%;
+        clear: both;
+    }
+    .navbar-toggle{
+        width: 100%;
+        margin:0;
+        border-radius:0;
+        border: none;
+    }
+    .menu{
+        padding: 10px 80px;
+        border: 1px solid #333;        
+    }
+    .navbar-collapse{
+        margin-top: 20px;
+    }
+}

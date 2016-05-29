@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Sentinel;
 use App\Portfolio;
+use App\User;
 
 class SiteController extends Controller
 {
@@ -14,7 +15,8 @@ class SiteController extends Controller
     public function landing()
     {
     	// load landing page
-    	return view('site.index');
+        $data['users'] = User::where('is_show_index','=',1)->get();        
+    	return view('site.index',$data);
     }
 
     public function ports()
