@@ -16,7 +16,7 @@ class SiteController extends Controller
     {
     	// load landing page
         $data['users'] = User::where('is_show_index','=',1)->get();        
-    	return view('templates.main.index',$data);
+    	return view('templates.portfolio.index',$data);
     }
 
     public function ports()
