@@ -1,4 +1,4 @@
-@extends('site.layouts.landing')
+@extends('templates.main.master')
 
 @section('content')
 	<header>
@@ -25,7 +25,7 @@
 					$items = ['Fashion','Photography','Web Design','Photography','Photography','Web Design','Photography','Photography','Web Design'];
 				?>
 				@for($i = 0;$i<sizeof($items);$i++)
-					@include('site.shares.work-item')
+					@include('templates.shares.work-item')
 				@endfor
 				<div id="member">
 					<div class="col-md-12">
@@ -38,7 +38,7 @@
 						</div>
 					</div>	
 					@for($i = 0;$i<4;$i++)				
-						@include('site.shares.member-item')
+						@include('templates.shares.member-item')
 					@endfor
 				</div>
 			</div>

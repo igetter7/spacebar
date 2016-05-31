@@ -12,7 +12,7 @@
 	<link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="{{ elixir('assets/css/app.css') }}">
-
+	<link rel="stylesheet" href="{{ elixir('assets/css/main.css') }}">
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
