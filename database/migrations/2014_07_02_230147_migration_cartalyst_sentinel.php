@@ -108,6 +108,7 @@ class MigrationCartalystSentinel extends Migration
             $table->integer('rating');
             $table->integer('following');
             $table->integer('followed');            
+            $table->integer('is_show_index');            
             $table->timestamps();
             $table->engine = 'InnoDB';
             $table->unique('email');

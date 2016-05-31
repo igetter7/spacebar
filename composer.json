@@ -10,8 +10,7 @@
         "cartalyst/sentinel": "2.0.*",
         "laravel/socialite": "^2.0",
         "intervention/image": "^2.3",
-        "barryvdh/laravel-debugbar": "^2.2",
-        "laravel-elixir": "*"
+        "barryvdh/laravel-debugbar": "^2.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
