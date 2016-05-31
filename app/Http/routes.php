@@ -12,6 +12,7 @@
 */
 
 Route::group(['middleware' => 'web'], function () {	
+	Route::post('subscription','SiteController@subscription');
 	Route::get('auth/facebook', 'UserController@redirectToProvider');	
 	Route::get('auth/facebook/callback', 'UserController@handleProviderCallback');	
    	Route::get('/','SiteController@landing');	

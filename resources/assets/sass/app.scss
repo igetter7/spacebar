@@ -1,2 +1,158 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$main_color: #5091c0;
+$main_color_2: #31aae2;
 
+@font-face {
+  font-family: 'HELVETHAICA';
+  src: url("/assets/fonts/DBHELVETHAICA.TTF") format("truetype");  
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HELVETHAICA';
+  src: url("/assets/fonts/DBHELVETHAICA-Bold.TTF") format("truetype");  
+  font-style: bold;
+}
+.grey{
+	color: #969595;
+}
+.relative{
+	position: relative;
+}
+.section-header{
+	margin-bottom: 40px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'HELVETHAICA';
+    margin: 0;    
+    letter-spacing: 1px;
+}
+a:hover{
+	text-decoration: none;	
+}
+h1{
+	font-size: 46px;
+}
+h2{
+	font-size: 30px;
+}
+h3{
+	font-size: 25px;
+}
+body{
+	font-size: 14px;
+}
+.main_color_2{
+	color: $main_color_2;
+}
+.active{
+	color: $main_color_2;
+}
+#caption-big-img{
+	background: #73c8b7;
+	padding: 50px 0;
+	color: #fff;
+}
+.sp-section{
+	padding: 65px 0;
+}
+.filter{
+	span{
+		margin-left: 20px;
+	}
+}
+.item{
+	position: relative;
+	margin-bottom: 40px;
+	cursor: pointer;
+	.cover{
+		opacity: 0;
+		height: 100%;
+		width: 100%;
+		transition: 0.3s all;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
+	&:hover{
+		.cover{			
+			opacity: 1;
+			background-color: rgba(49,140,182,0.8);
+		}		
+	}
+	.thumbail{
+		height: 260px;
+		background: #313131;
+	}
+	.name{
+		font-size: 20px;
+		color: #313131;
+	}	
+	a,a:hover{
+		color: #969595;
+	}
+	.caption{
+		color: #969595;
+		padding: 20px 0;
+	}
+}
+.icon{
+	font-size: 40px !important;
+}
+#member{
+	.item{
+		&:hover{
+			.contact{
+				background: #31aae2;
+				color: #fff;
+				.fa-long-arrow-right{
+					color: #fff;
+				}
+				.arrow-right {				    
+				    border-left-color: #31aae2;				   
+				}
+			}
+		}
+		.thumbail{
+			height: 250px;			
+		}
+		.caption{
+			background: #f9f9f9;
+			padding: 30px;
+		}
+		.cat{
+			color: #01b7f2;
+			text-transform: uppercase;
+		}
+		p{
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		.contact{
+			background: #fff;
+			float: left;
+			position: absolute;
+			left: 0;
+			bottom: 10px;
+			padding: 10px 25px;
+			transition: 0.3s all;
+			.fa-long-arrow-right{
+				color: #31aae2;
+				margin-left: 20px;
+			}
+			.arrow-right {
+			    width: 0;
+			    height: 0;
+			    right: -44px;
+			    position: absolute;
+			    border-top: 19px solid transparent;
+			    border-bottom: 19px solid transparent;
+			    border-left: 19px solid #fff;
+			    top: 50%;
+			    margin-top: -19px;	
+			    transition: 0.3s all;		    
+			}
+		}
+	}	
+}
+.number{
+	font-size: 40px;
+}

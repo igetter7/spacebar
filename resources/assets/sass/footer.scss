@@ -1,0 +1,45 @@
+footer{
+	background: #313131;
+	padding: 85px 0 60px 0;
+	color: #fff;
+	.footer-p{
+		font-size: 18px;
+	}
+	#subscribe-box{
+		input{
+			background: #4a4a4a;
+			border: 0;
+			width: 330px;
+			padding: 15px 20px;
+			outline: none;
+		}	
+		button{
+			background: #31aae2;
+			border: none;
+			padding: 15px 20px;
+			position: relative;
+			left: -2px;
+			outline: none;
+		}
+	}
+	#subscribe-text{
+		display: inline-flex;
+	}
+	#subscribe-thank{
+		padding: 10px;
+		border: 1px solid #fff;
+		float: left;		
+		display: none;		
+	}
+	.social{
+		color: #4a4a4a;
+		margin-top: 20px;
+		font-size: 20px;
+	}	
+}
+#copyright{
+	background: #2d2d2d;
+	padding: 30px 0;
+	color: #5091c0;
+	border-top: 1px solid #575757;
+}

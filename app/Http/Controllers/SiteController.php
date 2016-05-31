@@ -34,4 +34,13 @@ class SiteController extends Controller
 	{
 		echo 'show page info of '.$name;
 	}
+
+    public function subscription(Request $req)
+    {        
+        $obj = new \App\Subscription();
+        $obj->email = $req['email'];
+        $obj->save();
+        $return = new \App\AjaxResponse(200,'add successfully');
+        return $return->getJson();
+    }
 }
