@@ -23,6 +23,7 @@ Route::group(['middleware' => 'web'], function () {
 	});
 	Route::get('/members','SiteController@members');
 	Route::get('/blogs','SiteController@blogs');
+	Route::get('/works','SiteController@works');
 	Route::get('/about','SiteController@about');
 	Route::get('/logout','SiteController@logout');
 	Route::resource('/ports','PortfolioController');			

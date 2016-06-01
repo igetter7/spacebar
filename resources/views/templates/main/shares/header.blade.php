@@ -39,7 +39,8 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav main-nav">
-					<li><a href="{{ url('') }}" @if(Request::is('/')) class="active" @endif>ผลงานทั้งหมด</a></li>					
+					<li><a href="{{ url('') }}" @if(Request::is('/')) class="active" @endif>หน้าหลัก</a></li>					
+					<li><a href="{{ url('works') }}" @if(Request::is('/works')) class="active" @endif>ผลงานทั้งหมด</a></li>					
 					<li><a href="{{ url('members') }}" @if(Request::is('members')) class="active" @endif>สมาชิกทั้งหมด</a></li>
 					<li><a class="disable">หางาน</a></li>
 					<li><a href="{{ url('blogs') }}" @if(Request::is('blogs')) class="active" @endif>บล็อก</a></li>					
