@@ -12,9 +12,10 @@ use App\User;
 
 class PortfolioController extends Controller
 {    
-    public function index()
+    public function index($name = NULL)
     {
-        return view('ports.index');
+        $data = array();
+        return view('templates.portfolio.index',$data);
     }
 
     /**

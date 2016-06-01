@@ -40,6 +40,9 @@ footer {
   color: #fff;
   border-top: 1px solid #575757; }
 
+a {
+  color: #31aae2; }
+
 @font-face {
   font-family: 'HELVETHAICA';
   src: url("/assets/fonts/DBHELVETHAICA.TTF") format("truetype");
@@ -84,6 +87,21 @@ body {
 
 .active {
   color: #31aae2; }
+
+.sp-btn {
+  padding: 15px 30px;
+  background: #31aae2;
+  color: #fff;
+  border: 0;
+  margin-top: 10px; }
+  .sp-btn.big {
+    padding: 20px 60px; }
+
+.thumbnail {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0; }
 
 #caption-big-img {
   background: #73c8b7;

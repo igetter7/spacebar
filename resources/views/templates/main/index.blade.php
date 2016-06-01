@@ -1,14 +1,26 @@
 @extends('templates.main.master')
 
-@section('content')
-	<header>
-		
-	</header>
+@section('content')	
+	<div id="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<p><span>THAI ARTIST ONLINE SPACE</span> / ฟรี!  online portfolio สำหรับนักสร้างสรรค์งานชาวไทย</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div id="big-img">
+		<img src="{{ asset('assets/img/slide.jpg') }}" alt="">
+	</div>
 	<div id="caption-big-img">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h2>สมัครสมาชิก วันนี้ - 31 สิงหาคม 2559 ลุ้นรับสิทธิ์ได้ชื่อเว็บ .com ฟรี!</h2>
+				<div class="col-md-8">
+					<h2>สมัครสมาชิก วันนี้ - 31 สิงหาคม 2559 ลุ้นรับสิทธิ์ได้ชื่อเว็บ .com ฟรี!</h2>					
+				</div>
+				<div class="col-md-4 text-right">
+					<button class="sp-btn" id="btn2">CLICK</button>
 				</div>
 			</div>
 		</div>

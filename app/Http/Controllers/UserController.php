@@ -56,9 +56,16 @@ class UserController extends Controller
 		return redirect(url(''));
 	}
 
-	public function show($name = NULL)
+	public function about($name = NULL)
 	{
-		echo 'show page info of '.$name;
+		$data = array();
+		return view('templates.portfolio.index',$data);
+	}
+
+	public function contact($name = NULL)
+	{
+		$data = array();
+		return view('templates.portfolio.contact',$data);
 	}
 
 	public function edit(Request $request, $id = NULL)

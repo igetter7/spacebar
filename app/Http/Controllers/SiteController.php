@@ -22,7 +22,7 @@ class SiteController extends Controller
     public function ports()
     {
     	$data['ports'] = Portfolio::paginate(1);        
-        return view('site.port',$data);
+        // return view('templates.main.portfolios',$data);
     }
 
     public function logout()
@@ -32,7 +32,8 @@ class SiteController extends Controller
 
 	public function get($name = NULL)
 	{
-		echo 'show page info of '.$name;
+
+        return view('templates.portfolio.index',$data);		
 	}
 
     public function subscription(Request $req)

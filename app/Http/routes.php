@@ -17,19 +17,21 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('auth/facebook/callback', 'UserController@handleProviderCallback');	
    	Route::get('/','SiteController@landing');	
    	Route::post('/upload','PortfolioController@upload');	
-	Route::post('/create','UserController@create');
+	Route::post('/create','UserController@create');	
 	Route::get('/login',function(){
 
 	});
 	Route::get('/logout','SiteController@logout');
-	Route::resource('/ports','PortfolioController');
-	Route::get('/{name}/{slug}','PortfolioController@show');
-	Route::get('/{name}','UserController@show');
+	Route::resource('/ports','PortfolioController');			
 	Route::resource('/follow','FollowingController');
 	Route::resource('/like','LikeController');
+	Route::get('{name}','PortfolioController@index');
+	Route::get('{name}/works','PortfolioController@index');
+	Route::get('{name}/about','UserController@about');
+	Route::get('{name}/contact','UserController@contact');
+	Route::get('{name}/blog','BlogController@index');
+	Route::get('{name}/blog/{slug}','BlogController@show');
 });
-
-
 Route::get('/api/v1/',function(){
 	$array = ['status'=>200,'text'=>'it is ok.'];	
 	return json_encode($array);

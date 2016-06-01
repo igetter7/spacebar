@@ -6,10 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Spacebar - Thai artist online space</title>
-	<script src="https://use.fontawesome.com/009ca9b979.js"></script>
+	<title>Spacebar - Thai artist online space</title>	
 	<!-- Bootstrap Core CSS -->
 	<link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/vendors/font-awesome-4.6.3/css/font-awesome.min.css') }}" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="{{ elixir('assets/css/app.css') }}">
 	<link rel="stylesheet" href="{{ elixir('assets/css/profile.css') }}">
@@ -21,3 +21,70 @@
     <![endif]-->
 </head>
 <body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="pull-left">
+						<img src="{{ asset('assets/img/logo-profile.png') }}" alt="spacebar">
+					</div>
+					<div class="pull-right">
+						<a class="notification">
+							<img src="{{ asset('assets/img/world.png') }}" alt="nonification">
+							<span class="badge">
+								10
+							</span>
+						</a> 
+						<a href="{{ url('') }}"><img src="{{ asset('assets/img/home.png') }}" alt="nonification"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="header-profile">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-md-3">
+					<img src="{{ asset('assets/img/member2.png') }}" alt="sahred toy" id="profile-img">
+				</div>
+				<div class="col-md-offset-1 col-md-8 col-sm-offset-0 col-sm-7">
+					<div class="min-profile">
+						<h1>SAHRED TOY</h1>
+						<h2>iLLUSTRATOR / WRITER</h2>
+						<a href="">WWW.SAHREDTOY.COM</a>
+						<div>
+							<button class="sp-btn">FOLLOW</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="top-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="viewer">
+						<i class="fa fa-eye" aria-hidden="true"></i> 5000 views
+						<i class="fa fa-users" aria-hidden="true"></i> 400 followers
+					</div>
+				</div>
+				<div class="col-md-8">
+					<ul class="profile-menu">
+						<li>
+							<a href="{{ url('de/about') }}">about</a>
+						</li>
+						<li>
+							<a href="{{ url('de/works') }}">works</a>
+						</li>
+						<li>
+							<a href="{{ url('de/blog') }}">blog</a>
+						</li>
+						<li>
+							<a href="{{ url('de/contact') }}">contact</a>
+						</li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
