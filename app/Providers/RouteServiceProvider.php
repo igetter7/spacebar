@@ -24,7 +24,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        $router->pattern('name','[@A-Za-z0-9]+');         
+        $router->pattern('name','@[A-Za-z0-9]+');         
         parent::boot($router);
     }
 

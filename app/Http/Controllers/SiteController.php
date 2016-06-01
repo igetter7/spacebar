@@ -19,6 +19,24 @@ class SiteController extends Controller
     	return view('templates.main.index',$data);
     }
 
+    public function about()
+    {
+        $data['users'] = '';
+        return view('templates.main.about',$data);
+    }
+
+    public function members()
+    {
+        $data['users'] = '';
+        return view('templates.main.members',$data);
+    }
+
+    public function blogs()
+    {
+        $data['users'] = '';
+        return view('templates.main.blogs',$data);
+    }
+
     public function ports()
     {
     	$data['ports'] = Portfolio::paginate(1);        

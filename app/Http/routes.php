@@ -21,16 +21,20 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('/login',function(){
 
 	});
+	Route::get('/members','SiteController@members');
+	Route::get('/blogs','SiteController@blogs');
+	Route::get('/about','SiteController@about');
 	Route::get('/logout','SiteController@logout');
 	Route::resource('/ports','PortfolioController');			
 	Route::resource('/follow','FollowingController');
 	Route::resource('/like','LikeController');
 	Route::get('{name}','PortfolioController@index');
 	Route::get('{name}/works','PortfolioController@index');
+	Route::get('{name}/works/{slug}','PortfolioController@show');
 	Route::get('{name}/about','UserController@about');
 	Route::get('{name}/contact','UserController@contact');
 	Route::get('{name}/blog','BlogController@index');
-	Route::get('{name}/blog/{slug}','BlogController@show');
+	Route::get('{name}/blog/{slug}','BlogController@show');	
 });
 Route::get('/api/v1/',function(){
 	$array = ['status'=>200,'text'=>'it is ok.'];	

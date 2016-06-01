@@ -26,7 +26,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="pull-left">
-						<img src="{{ asset('assets/img/logo-profile.png') }}" alt="spacebar">
+						<a href="{{ url('') }}"><img src="{{ asset('assets/img/logo-profile.png') }}" alt="spacebar"></a>
 					</div>
 					<div class="pull-right">
 						<a class="notification">
@@ -72,16 +72,16 @@
 				<div class="col-md-8">
 					<ul class="profile-menu">
 						<li>
-							<a href="{{ url('de/about') }}">about</a>
+							<a href="{{ url('@user/about') }}">about</a>
 						</li>
 						<li>
-							<a href="{{ url('de/works') }}">works</a>
+							<a href="{{ url('@user/works') }}">works</a>
 						</li>
 						<li>
-							<a href="{{ url('de/blog') }}">blog</a>
+							<a href="{{ url('@user/blog') }}">blog</a>
 						</li>
 						<li>
-							<a href="{{ url('de/contact') }}">contact</a>
+							<a href="{{ url('@user/contact') }}">contact</a>
 						</li>						
 					</ul>
 				</div>

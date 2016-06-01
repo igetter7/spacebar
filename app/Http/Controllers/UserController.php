@@ -26,11 +26,10 @@ class UserController extends Controller
 		$condition['data'] = $fb_user->id;
 		$user = User::existing($condition);
 		if($user->count() == 0)
-		{			
-			dd($fb_user);			
+		{						
 			$data['user'] = $fb_user;
 			// view crate user
-			return view('site.forms.register',$data);
+			return view('templates.main.register',$data);
 		}else{		
 			$user = Sentinel::findById($user->id);	
 			$this->signature($user);

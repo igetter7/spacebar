@@ -69,15 +69,6 @@ header {
   height: 200px;
   margin-bottom: 20px; }
 
-.post .meta {
-  padding-top: 30px; }
-  .post .meta .meta-detail {
-    color: #969595; }
-
-.post .content {
-  padding: 30px 0;
-  color: #969595; }
-
 @media (max-width: 767px) {
   #profile-img {
     width: 100%; }

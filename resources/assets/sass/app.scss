@@ -3,6 +3,27 @@ $main_color_2: #31aae2;
 a{
 	color: #31aae2;
 }
+a:hover{
+	color: #1d94cb;
+}
+button{
+	transition: 0.3s all;
+	outline: none;
+}
+.sp-btn{
+	padding: 15px 30px;	
+	background: #31aae2;
+	color: #fff;
+	border: 0;
+	margin-top: 10px;
+	transition: 0.3s all;
+	&.big{
+		padding: 20px 60px;
+	}
+}
+.sp-btn:hover,footer #subscribe-box button:hover{
+	background: #1d94cb;
+}
 @font-face {
   font-family: 'HELVETHAICA';
   src: url("/assets/fonts/DBHELVETHAICA.TTF") format("truetype");  
@@ -21,6 +42,9 @@ a{
 }
 .section-header{
 	margin-bottom: 40px;
+}
+.disable{
+	color: #ddd !important;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'HELVETHAICA';
@@ -47,16 +71,6 @@ body{
 }
 .active{
 	color: $main_color_2;
-}
-.sp-btn{
-	padding: 15px 30px;	
-	background: #31aae2;
-	color: #fff;
-	border: 0;
-	margin-top: 10px;
-	&.big{
-		padding: 20px 60px;
-	}
 }
 .thumbnail{
 	padding: 0;
@@ -159,13 +173,13 @@ body{
 			.arrow-right {
 			    width: 0;
 			    height: 0;
-			    right: -44px;
+			    right: -45px;
 			    position: absolute;
-			    border-top: 19px solid transparent;
-			    border-bottom: 19px solid transparent;
-			    border-left: 19px solid #fff;
+			    border-top: 20px solid transparent;
+			    border-bottom: 20px solid transparent;
+			    border-left: 20px solid #fff;
 			    top: 50%;
-			    margin-top: -19px;	
+			    margin-top: -20px;	
 			    transition: 0.3s all;		    
 			}
 		}
@@ -177,4 +191,16 @@ body{
 #stat{
 	border-top: 1px solid #ddd;
 	background: #fdfdfd;
+}
+.post{
+	.meta{
+		padding-top: 30px;
+		.meta-detail{
+			color: #969595;
+		}
+	}
+	.content{
+		padding: 30px 0;
+		color: #969595;		
+	}
 }

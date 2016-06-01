@@ -39,17 +39,27 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav main-nav">
-					<li><a href="#" class="active">ผลงานทั้งหมด</a></li>					
-					<li><a href="#">สมาชิกทั้งหมด</a></li>					
-					<li><a href="#">บล็อก</a></li>					
-					<li><a href="#">เกี่ยวกับเรา</a></li>					
+					<li><a href="{{ url('') }}" @if(Request::is('/')) class="active" @endif>ผลงานทั้งหมด</a></li>					
+					<li><a href="{{ url('members') }}" @if(Request::is('members')) class="active" @endif>สมาชิกทั้งหมด</a></li>
+					<li><a class="disable">หางาน</a></li>
+					<li><a href="{{ url('blogs') }}" @if(Request::is('blogs')) class="active" @endif>บล็อก</a></li>					
+					<li><a href="{{ url('about') }}" @if(Request::is('about')) class="active" @endif>เกี่ยวกับเรา</a></li>										
 					<li class="visible-sm visible-xs"><a href="#">สมัครสมาชิก</a></li>					
 					<li class="visible-sm visible-xs"><a href="#">เข้าระบบ</a></li>					
 				</ul>				
 				<ul class="nav navbar-nav navbar-right visible-lg visible-md">
-					<li><a href="#"><button id="signup-btn">สมัครสมาชิก</button></a></li>				
+					<li><a href="{{ url('auth/facebook') }}"><button id="signup-btn">สมัครสมาชิก</button></a></li>				
 					<li><a href="#"><button id="login-btn">เข้าระบบ</button></a></li>				
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
+	<div id="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<p><span>THAI ARTIST ONLINE SPACE</span> / ฟรี!  online portfolio สำหรับนักสร้างสรรค์งานชาวไทย</p>
+				</div>
+			</div>
+		</div>
+	</div>	

@@ -13,6 +13,13 @@
 	color: #fff;
 	padding: 10px 20px;
 	text-transform: uppercase;
+	transition: 0.3s all;
+}
+#signup-btn:hover{
+	background: #333;
+}
+#login-btn:hover{
+	background: #1d94cb;
 }
 .navbar-right>li>a{
 	padding: 10px 5px;
@@ -69,6 +76,12 @@
 @media (max-width: 767px) {
 	footer #subscribe-box input{
 		width: auto;
+	}
+	#btn2{
+		position: initial;
+	}
+	.navbar-brand{
+		padding: 15px 40px;
 	}
 }
 @media (min-width: 768px) and (max-width: 992px){

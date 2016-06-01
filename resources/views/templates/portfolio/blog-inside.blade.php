@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="text-center">
-						<h3>LATEST POSTS: </h3>
+						<h3>TITLE</h3>
 					</div>
 				</div>
 				<div class="col-md-offset-2 col-md-8">

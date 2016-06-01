@@ -18,25 +18,14 @@
 	</div>
 	<section class="sp-section" id="main_item">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="filter section-header">
-						<h3>SELECTED WORK : <span class="active">This Week</span> <span>All</span> </h3>
-					</div>
-				</div>
-				<?php
-					$items = ['Fashion','Photography','Web Design','Photography','Photography','Web Design','Photography','Photography','Web Design'];
-				?>
-				@for($i = 0;$i<sizeof($items);$i++)
-					@include('templates.shares.work-item')
-				@endfor
+			<div class="row">				
 				<div id="member">
 					<div class="col-md-12">
 						<div class="section-header">
 							<div class="text-center">
-								<i class="fa fa-user main_color_2 icon" id="member-icon" aria-hidden="true"></i>
+								<i class="fa fa-user main_color_2 icon" id="member-icon" aria-hidden="true"></i>								
+								<h2 class="grey">3000</h2>
 								<h1>สมาชิก SPACEBAR</h1>
-								<a href="#"><h2 class="grey">ดูทั้งหมด ></h2></a>
 							</div>
 						</div>
 					</div>	

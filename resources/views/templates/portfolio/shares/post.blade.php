@@ -12,7 +12,7 @@
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus expedita accusamus voluptas commodi quisquam provident assumenda optio eum sequi modi in possimus, perferendis necessitatibus repudiandae pariatur, hic numquam exercitationem distinctio!
 		<br/>
 		<br/>
-		<a href="#">
+		<a href="{{ url('@user/blog/test') }}">
 			Read More >
 		</a>
 	</div>
