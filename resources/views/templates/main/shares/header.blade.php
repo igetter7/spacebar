@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="{{ url('') }}">
 					<img src="{{ asset('assets/img/logo.png') }}" alt="LOGO SPACEBAR">
 				</a>
 			</div>
