@@ -1,3 +1,3 @@
 @include('templates.main.shares.header')
-@yield('content')
+@yield('content','')
 @include('templates.main.shares.footer')

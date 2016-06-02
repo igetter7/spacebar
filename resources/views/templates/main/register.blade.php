@@ -1,5 +1,9 @@
 @extends('templates.main.master')
 
+@section('css')
+	
+@endsection
+
 @section('content')		
 	<div id="big-img">
 		<img src="{{ asset('assets/img/slide.jpg') }}" class="img-responsive">
@@ -7,4 +11,8 @@
 	<section class="sp-section" id="main_item">
 			
 	</section>		
+@endsection
+
+@section('js')
+	
 @endsection

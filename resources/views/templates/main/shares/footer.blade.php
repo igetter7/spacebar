@@ -62,5 +62,6 @@
 	        event.preventDefault();
 		});
 	</script>
+	@yield('js','')
 </body>
 </html>
