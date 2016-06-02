@@ -16,6 +16,7 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('auth/facebook', 'UserController@redirectToProvider');	
 	Route::get('auth/facebook/callback', 'UserController@handleProviderCallback');	
    	Route::get('/','SiteController@landing');	
+   	Route::get('/register','SiteController@register');	
    	Route::post('/upload','PortfolioController@upload');	
 	Route::post('/create','UserController@create');	
 	Route::get('/login',function(){

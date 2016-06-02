@@ -19,6 +19,11 @@ class SiteController extends Controller
     	return view('templates.main.index',$data);
     }
 
+    public function register()
+    {
+        return view('templates.main.register');
+    }
+
     public function about()
     {
         $data['users'] = '';
