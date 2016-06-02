@@ -29,12 +29,12 @@
 						<a href="{{ url('') }}"><img src="{{ asset('assets/img/logo-profile.png') }}" alt="spacebar"></a>
 					</div>
 					<div class="pull-right">
-						<a class="notification">
+						<!-- <a class="notification">
 							<img src="{{ asset('assets/img/world.png') }}" alt="nonification">
 							<span class="badge">
 								10
 							</span>
-						</a> 
+						</a>  -->
 						<a href="{{ url('') }}"><img src="{{ asset('assets/img/home.png') }}" alt="nonification"></a>
 					</div>
 				</div>
@@ -53,7 +53,11 @@
 						<h2>iLLUSTRATOR / WRITER</h2>
 						<a href="">WWW.SAHREDTOY.COM</a>
 						<div>
-							<button class="sp-btn">FOLLOW</button>
+							@if(1==2)
+								<button class="sp-btn">FOLLOW</button>
+							@else
+								<button class="sp-btn" style="background:#6FC0E6">UNFOLLOW</button>
+							@endif
 						</div>
 					</div>
 				</div>
