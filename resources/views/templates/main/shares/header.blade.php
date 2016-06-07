@@ -50,7 +50,7 @@
 					<li class="visible-sm visible-xs"><a href="#">เข้าระบบ</a></li>					
 				</ul>				
 				<ul class="nav navbar-nav navbar-right visible-lg visible-md">
-					<li><a href="{{ url('auth/facebook') }}"><button id="signup-btn" class="main-btn">สมัครสมาชิก</button></a></li>				
+					<li><a href="{{ url('signup') }}"><button id="signup-btn" class="main-btn">สมัครสมาชิก</button></a></li>				
 					<li><a href="#"><button id="login-btn" class="main-btn">เข้าระบบ</button></a></li>				
 				</ul>
 			</div><!-- /.navbar-collapse -->
