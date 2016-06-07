@@ -29,6 +29,23 @@
 							</div>
 						</div>
 					</div>	
+					<div class="col-md-12">
+						<div class="filter section-header">
+							<div class="row">
+								<div class="col-md-3">
+									<h2 class="active">ดูงานตามประเภทสมาชิก</h2>
+								</div>
+								<div class="col-md-3">
+									<select class="form-control" id="sel1">
+										<option>All</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
 					@for($i = 0;$i<4;$i++)				
 						@include('templates.shares.member-item')
 					@endfor

@@ -5,15 +5,21 @@
 .navbar {
   margin-bottom: 0; }
 
-#signup-btn, #login-btn {
-  background: #4a4a4a;
-  font-family: 'HELVETHAICA';
-  font-size: 18px;
-  border: 0;
-  color: #fff;
+.main-btn {
+  background: #31aae2;
   padding: 10px 20px;
   text-transform: uppercase;
-  transition: 0.3s all; }
+  transition: 0.3s all;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  font-family: 'HELVETHAICA'; }
+  .main-btn:hover {
+    background: #1d94cb;
+    color: #fff; }
+
+#signup-btn {
+  background: #4a4a4a; }
 
 #signup-btn:hover {
   background: #333; }
@@ -46,9 +52,6 @@
 .navbar-toggle {
   margin-top: 24px; }
 
-#login-btn {
-  background: #31aae2; }
-
 #news {
   font-size: 20px;
   font-family: 'HELVETHAICA';
@@ -67,6 +70,13 @@
   padding-right: 50px;
   color: #73c8b7;
   background: #fff; }
+
+select.form-control {
+  border: 1px solid #44A6EA;
+  border-radius: 0px; }
+
+#file-img {
+  margin-right: 15px; }
 
 @media (max-width: 767px) {
   footer #subscribe-box input {

@@ -12,7 +12,7 @@ use \App\User;
 
 
 class UserController extends Controller
-{	
+{		
 
 	public function redirectToProvider()
 	{
@@ -34,6 +34,11 @@ class UserController extends Controller
 			$user = Sentinel::findById($user->id);	
 			$this->signature($user);
 		}	
+	}
+
+	public function create()
+	{
+		return view('templates.main.register');
 	}
 
 	public function store(Request $request)

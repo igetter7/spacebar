@@ -20,10 +20,31 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="filter section-header">
-						<h3>SELECTED WORK : <span class="active">This Week</span> <span>All</span> </h3>
+						<div class="section-header">
+							<div class="text-center">
+								<img src="{{ asset('assets/img/circle.png') }}" alt="">
+								<h2 class="grey">3000</h2>
+								<h1>WORKS</h1>
+							</div>
+						</div>
+					</div>	
+					<div class="col-md-12">
+						<div class="filter section-header">
+							<div class="row">
+								<div class="col-md-3">
+									<h2 class="active">ดูงานตามประเภทสมาชิก</h2>
+								</div>
+								<div class="col-md-3">
+									<select class="form-control" id="sel1">
+										<option>All</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
 				<?php
 					$items = ['Fashion','Photography','Web Design','Photography','Photography','Web Design','Photography','Photography','Web Design'];
 				?>
