@@ -47,10 +47,64 @@
 			background-color: #44A6EA;
 		}
 
+		.sample-profile {
+			padding: 50px;
+			border: 1px solid #000;
+		}
+
+		.sample-profile h1 {
+			font-size: 26px;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.user-photo {
+			width: 100%;
+			height: 250px;
+			background-color: #5B6575;
+		}
+
+		.user-card {
+			background-color: #F5F5F5;
+			border: 1px solid #B7B7B7;
+		}
+
+		.user-info {
+			padding: 18px;
+			text-align: center;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+
+		.user-name {
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		.user-skill {
+			color: #23A7F5;
+		}
+
+		.user-detail {
+			margin-top: 15px;
+			color: #ADADAD;
+		}
+
+		.register-button {
+			background-color: #00A5E4;
+			width: 352px;
+			border-radius: 0px;
+			padding: 13px;
+		}
+
+		.register-button-box {
+			margin-top: 50px;
+		}
+
 	</style>
 	<div id="big-img">
 		<img src="{{ asset('assets/img/slide.jpg') }}" class="img-responsive">
-	</div>	
+	</div>
+	<div class="container">
 	<section class="sp-section" id="main_item">
 			<div class="row">
 				<div class="col-md-12 register-top">
@@ -130,7 +184,7 @@
 								<div class="form-group">
 									<label class="col-sm-3 control-label">Profile Picture <span class="badge">D</span></label>
 									<div class="col-sm-6">
-										img
+										img best size 270 x 250 px
 									</div>
 								</div>
 
@@ -181,12 +235,29 @@
 							</form>
 						</div>
 						<div class="col-md-4">
-							BBBB
+							<div class="sample-profile">
+								<h1>ตัวอย่าง PROFILE สมาชิก</h1>
+								<div class="user-card">
+									<div class="user-photo"></div>
+									<div class="user-info">
+										<div class="user-name">Jenifir White</div>
+										<div class="user-skill">FOUNDER</div>
+										<div class="user-detail">Lorem impus dolor sit ametedt consectetur adtup</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+
+					<div class="col-lg-12 center register-button-box">
+						<button class="btn btn-info register-button" type="submit">Sign up</button>
+					</div>
+
 				</div>
 			</div>
-	</section>		
+	</section>
+		
+	</div>
 @endsection
 
 @section('js')
