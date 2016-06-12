@@ -17,10 +17,10 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('auth/facebook', 'UserController@redirectToProvider');	
 	Route::get('auth/facebook/callback', 'UserController@handleProviderCallback');	
    	Route::get('/','SiteController@landing');	
-   	Route::get('/register','SiteController@register');	
-   	Route::post('/upload','PortfolioController@upload');	
-	Route::post('/create','UserController@create');	
-	Route::get('/login',function(){
+   	Route::get('register','SiteController@register');	
+   	Route::post('upload','PortfolioController@upload');	
+	Route::post('register','UserController@store');	
+	Route::get('login',function(){
 
 	});
 	Route::get('/members','SiteController@members');
@@ -39,6 +39,7 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('{name}/blog','BlogController@index');
 	Route::get('{name}/blog/{slug}','BlogController@show');	
 });
+
 Route::get('/api/v1/',function(){
 	$array = ['status'=>200,'text'=>'it is ok.'];	
 	return json_encode($array);

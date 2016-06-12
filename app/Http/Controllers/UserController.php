@@ -42,20 +42,25 @@ class UserController extends Controller
 	}
 
 	public function store(Request $request)
-	{			
+	{					
 		$validate = Validator::make($request->input(), $this->rule());
 		if ($validate->fails())
 	    {
 	    	$messages = $validate->messages();
 	        return redirect()->back()->withErrors($validate->errors())->withInput();
 	    }			
-		$data['email']      = $request['email'];	
-		$data['password']   = $request['password'];	
-		$data['first_name'] = $request['first_name'];
-		$data['last_name']  = $request['last_name'];		
-		$data['job']        = $request['job'];		
-		$data['about']      = $request['about'];				
-		$user               = Sentinel::registerAndActivate($data);
+		$data['email']       = $request['email'];	
+		$data['password']    = $request['password'];	
+		$data['name']        = $request['name'];
+		$data['first_name']  = $request['first_name'];
+		$data['last_name']   = $request['last_name'];		
+		$data['job']         = $request['job'];		
+		$data['main_skill']  = $request['main_skill'];		
+		$data['description'] = $request['description'];				
+		$data['other_skill'] = json_encode($request['other_skill']);		
+		$data['dob']         = $request['dob'];				
+		$data['tel']         = $request['tel'];				
+		$user                = Sentinel::registerAndActivate($data);
 		$this->signature($user);
 		return redirect(url(''));
 	}
