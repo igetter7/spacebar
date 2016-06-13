@@ -72,8 +72,8 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">OTHER SKILL</label>
 								<div class="col-sm-6">
-									<input type="checkbox" name="other_skill[]" value="ชื่อ"> <span>ชื่อ</span>
-									<input type="checkbox" name="other_skill[]" value="test"> <span>test</span>
+									<input type="checkbox" name="other_skill[]" value="ชื่อ" class="otherskills"> <span class="otherskill_title">ชื่อ</span>
+									<input type="checkbox" name="other_skill[]" value="test" class="otherskills"> <span class="otherskill_title">test</span>
 									<span class="help-block">* SKILL อาชีพอื่นๆ (งานอื่นๆ)</span>
 								</div>
 							</div>
