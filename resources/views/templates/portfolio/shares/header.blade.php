@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Spacebar - Thai artist online space</title>	
+	<title>Spacebar - Thai artist online space</title>
 	<!-- Bootstrap Core CSS -->
 	<link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/vendors/font-awesome-4.6.3/css/font-awesome.min.css') }}" rel="stylesheet">
@@ -69,8 +69,8 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="viewer">
-						<i class="fa fa-eye" aria-hidden="true"></i> 5000 views
-						<i class="fa fa-users" aria-hidden="true"></i> 400 followers
+						<i class="fa fa-eye" aria-hidden="true"></i> <span>5000 views</span>
+						<i class="fa fa-users" aria-hidden="true"></i> <span>400 followers</span>
 					</div>
 				</div>
 				<div class="col-md-8">
@@ -86,7 +86,7 @@
 						</li>
 						<li>
 							<a href="{{ url('@user/contact') }}">contact</a>
-						</li>						
+						</li>
 					</ul>
 				</div>
 			</div>

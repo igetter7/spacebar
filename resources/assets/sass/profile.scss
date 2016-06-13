@@ -14,45 +14,51 @@ header{
 			padding: 5px;
 			border-radius: 50%;
 			background: red;
-			color: #fff;			
+			color: #fff;
 		}
 	}
+}
+#profile-img{
+	// border-radius: 50%;		
 }
 #header-profile{
 	padding: 60px 0 30px 0;
 	.min-profile{
 		padding: 35px 0;
 		h1{
-			font-size: 60px;		
+			font-size: 60px;
 		}
 		a{
 			color: #31aae2;
 			font-size: 20px;
 		}
-	}	
+	}
 }
 #top-bar{
 	background: #ebebeb;
 	padding: 10px 0;
 	color: #656565;
-	font-family: 'HELVETHAICA';	
+	font-family: 'HELVETHAICA';
 	.viewer{
-		padding: 10px 25px;
+		padding: 4px 0px;
 		font-size: 20px;
+		span{
+			margin-right: 10px;
+		}
 		i{
+			margin-right: 10px;
 			font-size: 25px;
-			margin: 0 15px;
 			position: relative;
 			top: 2px;
 		}
 	}
-	.profile-menu{	
+	.profile-menu{
 		margin: 0;
 		padding: 0;
 		li{
 			float: left;
 			list-style: none;
-			font-size: 36px;
+			font-size: 30px;
 			padding: 0 20px;
 			text-transform: uppercase;
 			a{
@@ -62,7 +68,7 @@ header{
 				color: #333;
 			}
 		}
-	}	
+	}
 }
 .contact-box{
 	padding: 30px 0;

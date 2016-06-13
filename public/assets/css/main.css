@@ -52,23 +52,13 @@
 .navbar-toggle {
   margin-top: 24px; }
 
-#news {
-  font-size: 20px;
-  font-family: 'HELVETHAICA';
-  text-align: center;
-  padding: 15px 0; }
-  #news p {
-    margin: 0; }
-  #news span {
-    color: #31aae2; }
-
 #btn2 {
   position: absolute;
   right: 0;
   top: -25px;
   padding-left: 50px;
   padding-right: 50px;
-  color: #73c8b7;
+  color: #31aae1;
   background: #fff; }
 
 select.form-control {
