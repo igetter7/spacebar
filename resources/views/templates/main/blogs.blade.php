@@ -2,7 +2,7 @@
 
 @section('content')		
 	<div id="big-img">
-		<img src="{{ asset('assets/img/slide.jpg') }}" class="img-responsive">
+		<img src="{{ asset('assets/img/header-blog.jpg') }}" class="img-responsive">
 	</div>
 	<div id="caption-big-img">
 		<div class="container">
