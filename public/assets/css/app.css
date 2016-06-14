@@ -79,6 +79,15 @@ button {
   src: url("/assets/fonts/DBHELVETHAICA-Bold.TTF") format("truetype");
   font-style: bold; }
 
+@font-face {
+  font-family: 'muliregular';
+  src: url('../../../assets/fonts/muli-webfont.woff2') format('woff2'),
+  url('./assets/fonts/muli-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 .grey {
   color: #969595; }
 
@@ -125,7 +134,7 @@ body {
 
 #caption-big-img {
   background: #31aae1;
-  padding: 50px 0;
+  padding: 30px 0;
   color: #fff; }
 
 .sp-section {

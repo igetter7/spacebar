@@ -51,7 +51,8 @@ select.form-control {
 .user-info {
   padding: 18px;
   text-align: center;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  min-height: 135px; }
 
 .user-name {
   font-weight: bold;
@@ -70,13 +71,7 @@ select.form-control {
 .register-button-box {
   margin-top: 50px; }
 
-input.otherskills {
-  width: 20px;
-  height: 20px; }
-
-.otherskill_title {
-  display: inline-block;
-  min-width: 150px; }
-
+#ref-description {
+  word-break: break-word; }
 
 /*# sourceMappingURL=register.css.map */
