@@ -12,9 +12,10 @@ use App\User;
 
 class PortfolioController extends Controller
 {    
-    public function index()
+    public function index($name = NULL)
     {
-        return view('ports.index');
+        $data = array();
+        return view('templates.portfolio.index',$data);
     }
 
     /**
@@ -59,18 +60,20 @@ class PortfolioController extends Controller
      */
     public function show($name,$slug)
     {
-        $obj = Portfolio::with(
-                    array('user'=>function($query) use ($name){
-                        $query->where('username','=',$name);
-                    })
-                )->where('slug','=',$slug)->first();
-        if($obj != NULL)
-        {
-            $data['port'] = $obj;
-            $data['user'] = User::where('username','=',$name);
-            // retuen view 
-            dd($obj);
-        } else {}
+        // $obj = Portfolio::with(
+        //             array('user'=>function($query) use ($name){
+        //                 $query->where('username','=',$name);
+        //             })
+        //         )->where('slug','=',$slug)->first();
+        // if($obj != NULL)
+        // {
+        //     $data['port'] = $obj;
+        //     $data['user'] = User::where('username','=',$name);
+        //     // retuen view 
+        //     dd($obj);
+        // } else {}
+        $data = array();
+        return view('templates.portfolio.blog-inside',$data);
     }
 
     /**

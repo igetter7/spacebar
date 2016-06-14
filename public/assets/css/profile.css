@@ -1,2 +1,85 @@
+body {
+  color: #4a4a4a; }
+
+header {
+  height: 56px;
+  background: #31aae2; }
+  header .notification {
+    margin-right: 10px;
+    position: relative; }
+    header .notification .badge {
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      padding: 5px;
+      border-radius: 50%;
+      background: red;
+      color: #fff; }
+
+#header-profile {
+  padding: 60px 0 30px 0; }
+  #header-profile .min-profile {
+    padding: 35px 0; }
+    #header-profile .min-profile h1 {
+      font-size: 60px; }
+    #header-profile .min-profile a {
+      color: #31aae2;
+      font-size: 20px; }
+
+#top-bar {
+  background: #ebebeb;
+  padding: 10px 0;
+  color: #656565;
+  font-family: 'HELVETHAICA'; }
+  #top-bar .viewer {
+    padding: 4px 0px;
+    font-size: 20px; }
+    #top-bar .viewer span {
+      margin-right: 10px; }
+    #top-bar .viewer i {
+      margin-right: 10px;
+      font-size: 25px;
+      position: relative;
+      top: 2px; }
+  #top-bar .profile-menu {
+    margin: 0;
+    padding: 0; }
+    #top-bar .profile-menu li {
+      float: left;
+      list-style: none;
+      font-size: 30px;
+      padding: 0 20px;
+      text-transform: uppercase; }
+      #top-bar .profile-menu li a {
+        color: #656565; }
+      #top-bar .profile-menu li a:hover {
+        color: #333; }
+
+.contact-box {
+  padding: 30px 0;
+  font-size: 16px; }
+  .contact-box p {
+    margin: 5px 0; }
+
+.contact-form input, .contact-form textarea {
+  padding: 20px;
+  width: 100%;
+  margin-top: 30px;
+  border: 2px solid #fafafa; }
+
+.contact-form textarea {
+  height: 200px;
+  margin-bottom: 20px; }
+
+@media (max-width: 767px) {
+  #profile-img {
+    width: 100%; }
+  #header-profile {
+    padding: 20px 0; }
+    #header-profile .min-profile {
+      padding: 30px 0; }
+  .profile-menu li {
+    width: 100%;
+    text-align: center; } }
 
 /*# sourceMappingURL=profile.css.map */

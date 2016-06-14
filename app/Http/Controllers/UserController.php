@@ -12,7 +12,7 @@ use \App\User;
 
 
 class UserController extends Controller
-{	
+{		
 
 	public function redirectToProvider()
 	{
@@ -26,39 +26,55 @@ class UserController extends Controller
 		$condition['data'] = $fb_user->id;
 		$user = User::existing($condition);
 		if($user->count() == 0)
-		{			
-			dd($fb_user);			
+		{						
 			$data['user'] = $fb_user;
 			// view crate user
-			return view('site.forms.register',$data);
+			return view('templates.main.register',$data);
 		}else{		
 			$user = Sentinel::findById($user->id);	
 			$this->signature($user);
 		}	
 	}
 
+	public function create()
+	{
+		return view('templates.main.register');
+	}
+
 	public function store(Request $request)
-	{			
+	{					
 		$validate = Validator::make($request->input(), $this->rule());
 		if ($validate->fails())
 	    {
 	    	$messages = $validate->messages();
 	        return redirect()->back()->withErrors($validate->errors())->withInput();
 	    }			
-		$data['email']      = $request['email'];	
-		$data['password']   = $request['password'];	
-		$data['first_name'] = $request['first_name'];
-		$data['last_name']  = $request['last_name'];		
-		$data['job']        = $request['job'];		
-		$data['about']      = $request['about'];				
-		$user               = Sentinel::registerAndActivate($data);
+		$data['email']       = $request['email'];	
+		$data['password']    = $request['password'];	
+		$data['name']        = $request['name'];
+		$data['first_name']  = $request['first_name'];
+		$data['last_name']   = $request['last_name'];		
+		$data['job']         = $request['job'];		
+		$data['main_skill']  = $request['main_skill'];		
+		$data['description'] = $request['description'];				
+		$data['other_skill'] = json_encode($request['other_skill']);		
+		$data['dob']         = $request['dob'];				
+		$data['tel']         = $request['tel'];				
+		$user                = Sentinel::registerAndActivate($data);
 		$this->signature($user);
 		return redirect(url(''));
 	}
 
-	public function show($name = NULL)
+	public function about($name = NULL)
 	{
-		echo 'show page info of '.$name;
+		$data = array();
+		return view('templates.portfolio.index',$data);
+	}
+
+	public function contact($name = NULL)
+	{
+		$data = array();
+		return view('templates.portfolio.contact',$data);
 	}
 
 	public function edit(Request $request, $id = NULL)

@@ -16,13 +16,42 @@ class SiteController extends Controller
     {
     	// load landing page
         $data['users'] = User::where('is_show_index','=',1)->get();        
-    	return view('site.index',$data);
+    	return view('templates.main.index',$data);
+    }
+
+    public function register()
+    {
+        return view('templates.main.register');
+    }
+
+    public function about()
+    {
+        $data['users'] = '';
+        return view('templates.main.about',$data);
+    }
+
+    public function members()
+    {
+        $data['users'] = '';
+        return view('templates.main.members',$data);
+    }
+
+    public function blogs()
+    {
+        $data['users'] = '';
+        return view('templates.main.blogs',$data);
+    }
+
+    public function works()
+    {
+        $data['users'] = '';
+        return view('templates.main.works',$data);
     }
 
     public function ports()
     {
     	$data['ports'] = Portfolio::paginate(1);        
-        return view('site.port',$data);
+        // return view('templates.main.portfolios',$data);
     }
 
     public function logout()
@@ -32,7 +61,8 @@ class SiteController extends Controller
 
 	public function get($name = NULL)
 	{
-		echo 'show page info of '.$name;
+
+        return view('templates.portfolio.index',$data);		
 	}
 
     public function subscription(Request $req)
