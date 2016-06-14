@@ -51,13 +51,23 @@
 					<div class="min-profile">
 						<h1>SAHRED TOY</h1>
 						<h2>iLLUSTRATOR / WRITER</h2>
-						<a href="">WWW.SAHREDTOY.COM</a>
-						<div>
+						<div class="social-count">
+							<div class="social-digit">
+								<span class="glyphicon glyphicon-user" aria-hidden="true"></span> 1580
+							</div>
+							<div class="social-digit">
+								<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 78K
+							</div>
+							<button class="btn btn-default">starter</button>
+						</div>
+						<a href="" class="profile-header-link">WWW.SAHREDTOY.COM</a>
+						<div class="follow-message-btn">
 							@if(1==2)
-								<button class="sp-btn">FOLLOW</button>
+								<button class="sp-btn">follow</button>
 							@else
-								<button class="sp-btn" style="background:#6FC0E6">UNFOLLOW</button>
+								<button class="sp-btn" style="background:#6FC0E6">unfollow</button>
 							@endif
+								<button class="sp-btn">message</button>
 						</div>
 					</div>
 				</div>
@@ -67,12 +77,12 @@
 	<div id="top-bar">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="viewer">
-						<i class="fa fa-eye" aria-hidden="true"></i> <span>5000 views</span>
-						<i class="fa fa-users" aria-hidden="true"></i> <span>400 followers</span>
-					</div>
-				</div>
+				{{--<div class="col-md-4">--}}
+					{{--<div class="viewer">--}}
+						{{--<i class="fa fa-eye" aria-hidden="true"></i> <span>5000 views</span>--}}
+						{{--<i class="fa fa-users" aria-hidden="true"></i> <span>400 followers</span>--}}
+					{{--</div>--}}
+				{{--</div>--}}
 				<div class="col-md-8">
 					<ul class="profile-menu">
 						<li>
