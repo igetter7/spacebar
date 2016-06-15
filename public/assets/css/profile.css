@@ -23,8 +23,9 @@ header {
     padding: 3px 0;
     font-family: 'muliregular' !important;}
     #header-profile .min-profile h1 {
-      font-size: 60px;
-      font-family: 'muliregular' !important; }
+      font-size: 30px;
+      font-family: 'muliregular' !important;
+      font-weight: bold;}
     #header-profile .min-profile h2 {
       font-family: 'muliregular' !important;
       font-size: 16px;
@@ -36,10 +37,12 @@ header {
       font-size: 20px; }
 
 #top-bar {
-  background: #ebebeb;
   padding: 10px 0;
   color: #656565;
-  font-family: 'muliregular'; }
+  font-family: 'muliregular';
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
   #top-bar .viewer {
     padding: 4px 0px;
     font-size: 20px; }
@@ -80,6 +83,40 @@ header {
 .contact-form textarea {
   height: 200px;
   margin-bottom: 20px; }
+
+.social-count {
+  color: #77c7ec;
+  margin-bottom: 10px;
+}
+
+.sp-btn {
+  padding: 10px 30px;
+  background: #31aae2;
+  color: #fff;
+  border: 0;
+  transition: 0.3s all;
+  margin-top: 60px;
+}
+
+.social-digit {
+  width: 100px;
+  float: left;
+  padding-top: 7px;
+}
+
+.follow-message-btn {
+  float: right;
+  margin-top: -60px;
+}
+
+a.profile-header-link {
+  color: #000000 !important;
+  font-size: 12px !important;
+}
+
+#profile-img {
+  width: 100%;
+}
 
 @media (max-width: 767px) {
   #profile-img {

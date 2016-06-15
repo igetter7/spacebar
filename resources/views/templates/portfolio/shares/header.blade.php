@@ -44,10 +44,10 @@
 	<div id="header-profile">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-5 col-md-3">
+				<div class="col-sm-5 col-md-2">
 					<img src="{{ asset('assets/img/member2.png') }}" alt="sahred toy" id="profile-img">
 				</div>
-				<div class="col-md-offset-1 col-md-8 col-sm-offset-0 col-sm-7">
+				<div class="col-md-offset-0 col-md-10 col-sm-offset-0 col-sm-7">
 					<div class="min-profile">
 						<h1>SAHRED TOY</h1>
 						<h2>iLLUSTRATOR / WRITER</h2>
@@ -74,8 +74,8 @@
 			</div>
 		</div>
 	</div>
-	<div id="top-bar">
 		<div class="container">
+			<div id="top-bar">
 			<div class="row">
 				{{--<div class="col-md-4">--}}
 					{{--<div class="viewer">--}}
