@@ -22,11 +22,22 @@ header{
 	// border-radius: 50%;		
 }
 #header-profile{
-	padding: 60px 0 30px 0;
+  padding: 30px 0 30px 0;
+  font-family: 'muliregular' !important;
 	.min-profile{
-		padding: 35px 0;
+	  padding: 3px 0;
+	  font-family: 'muliregular' !important;
 		h1{
-			font-size: 60px;
+		  font-size: 30px;
+		  font-family: 'muliregular' !important;
+		  font-weight: bold;
+		}
+	  h2 {
+		font-family: 'muliregular' !important;
+		font-size: 16px;
+		padding: 10px 0;
+		color: #4e4e4e;
+		letter-spacing: 4px;
 		}
 		a{
 			color: #31aae2;
@@ -35,10 +46,11 @@ header{
 	}
 }
 #top-bar{
-	background: #ebebeb;
 	padding: 10px 0;
 	color: #656565;
-	font-family: 'HELVETHAICA';
+  font-family: 'muliregular';
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 	.viewer{
 		padding: 4px 0px;
 		font-size: 20px;
@@ -58,7 +70,7 @@ header{
 		li{
 			float: left;
 			list-style: none;
-			font-size: 30px;
+		  font-size: 14px;
 			padding: 0 20px;
 			text-transform: uppercase;
 			a{
@@ -90,6 +102,43 @@ header{
 	}
 }
 
+.social-count {
+  color: #77c7ec;
+  margin-bottom: 10px;
+}
+
+.sp-btn {
+  padding: 10px 30px;
+  background: #31aae2;
+  color: #fff;
+  border: 0;
+  transition: 0.3s all;
+  margin-top: 60px;
+}
+
+.social-digit {
+  width: 100px;
+  float: left;
+  padding-top: 7px;
+}
+
+.follow-message-btn {
+  float: right;
+  margin-top: -60px;
+}
+
+.profile-header-link {
+  color: #000000 !important;
+  font-size: 12px !important;
+}
+
+#profile-img {
+  width: 100%;
+}
+
+.btn.btn-default {
+  padding: 5px 8px 8px 8px;
+}
 
 @media (max-width: 767px) {
 	#profile-img{
@@ -97,8 +146,21 @@ header{
 	}
 	#header-profile{
 		padding: 20px 0;
+	  text-align: center;
 		.min-profile{
 			padding: 30px 0;
+		  text-align: center;
+		  .social-count {
+			text-align: center;
+			display: inline-table;
+		  }
+		  .profile-header-link {
+			display: block;
+		  }
+		  .follow-message-btn {
+			float: none;
+			margin-top: -25px;
+		  }
 		}
 	}
 	.profile-menu{
@@ -107,4 +169,5 @@ header{
 			text-align: center;
 		}
 	}
+
 }
