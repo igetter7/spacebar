@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div id="big-img">
+<div id="big-img" class="container">
 	<img src="{{ asset('assets/img/slide.jpg') }}" class="img-responsive">
 </div>
 <div class="container">

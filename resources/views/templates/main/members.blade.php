@@ -1,17 +1,17 @@
 @extends('templates.main.master')
 
 @section('content')		
-	<div id="big-img">
-		<img src="{{ asset('assets/img/slide.jpg') }}" class="img-responsive">
+	<div id="big-img" class="container">
+		<img src="{{ asset('assets/img/header-member.jpg') }}" class="img-responsive">
 	</div>
 	<div id="caption-big-img">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<h2>สมัครสมาชิก วันนี้ - 31 สิงหาคม 2559 ลุ้นรับสิทธิ์ได้ชื่อเว็บ .com ฟรี!</h2>					
-				</div>
-				<div class="col-md-4 text-center">
-					<button class="sp-btn" id="btn2">CLICK</button>
+				<div class="col-md-12 text-center">
+					<h2>สมัครสมาชิก วันนี้ - 31 สิงหาคม 2559 ลุ้นรับสิทธิ์ได้ชื่อเว็บ .com ฟรี!
+						{{--</div>--}}
+						{{--<div class="col-md-4 text-center">--}}
+						<button class="sp-btn" id="btn3">CLICK</button></h2>
 				</div>
 			</div>
 		</div>
